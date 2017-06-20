@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Neeraj's Coffee Store</title>
+        <script src="~/Scripts/jquery.min.js"></script>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form id="change-email-form">
+            <input type="text"
+                   name="username"
+                   id="username"
+                   placeholder="username"
+                   pattern="[a-zA-Z]{5, }"
+                   maxlength="30"
+                   required
+                   class="form-control">
+            <div class="validation-messages">
+                <span data-rule="valueMissing" class="hide">
+                    The username is required.
+                </span>
+                <span data-rule="patternMismatch" class="hide">
+                    Must be a series of alpha characters only(min 5, max 30).
+                </span>
+            </div>
+            <input type="email"
+                   id="email"
+                   placeholder="email address"
+                   title="Email address is required."
+                   required
+                   class="form-control">
+            <div class="validation-messages">
+                <span data-rule="valueMissing" class="hide">
+                    An email address is required.
+                </span>
+                <span data-rule="typeMismatch" class="hide">
+                    Special characters are not allowed.
+                </span>
+            </div>
+            <div class="push-down-top">
+                <button type="button" class="btnbtn-link">Cancel</button>
+                <button type="button" id="login-button" class="btn">Login</button>
+            </div>
+        </form>
+    </body>
+</html>
