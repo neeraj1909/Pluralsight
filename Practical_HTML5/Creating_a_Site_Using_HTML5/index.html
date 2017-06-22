@@ -5,7 +5,7 @@
         <meta charset="utf-8"/>
         <title>Neeraj's Coffee Store</title>
         <script src="~/Scripts/jquery.min.js"></script>
-        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/layout.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -13,11 +13,23 @@
         <header>
             <div>
                 <a class="headerlogo"
-                   href="Creating_the%20_Pages_Using_the_New_Elements.html">
-                    <img src="images/logo.png">
+                   href="index.html">
+                    <img src="images/coffee-shop-220225_640.jpg">
                 </a>
                 <span id="headername">Neeraj's Coffee Store</span>
+                <input type="search" class="searchbox" placeholder="Search our store"/>
             </div>
+            <nav class="backgroundgradient">
+                <ul>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="blog.html">Blog</a></li>
+                    <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+                    <li><a class="navlink" href="accessories">Accessories</a></li>
+                    <li><a class="navlink" href="gifts.html">Gifts</a></li>
+                    <li><a class="navlink" href="findus.html">Find us</a></li>
+                    <li><a class="navlink" href="checkout.html">Checkout</a></li>
+                </ul>
+            </nav>
         </header>
 
         <section id="welcometext">
@@ -46,7 +58,7 @@
                 <header class="backgroundgradient">Coffees</header>
                 <article class="productarticle">
                     <figure>
-                        <img class="productarticlethumbnail" src="Images/Coffee/coffee1.jpg"/>
+                        <img class="productarticlethumbnail" src="images/cup_of_coffee.jpg"/>
                     </figure>
                     <header>
                         <span class="productarticlename">
@@ -56,7 +68,7 @@
                         </span>
                     </header>
                     <p class="productarticleprice">$10</p>
-                    <div class="addtocartbutton">
+                    <div class="addtocartbutton" id="myAddToCartButton">
                         Add to Cart
                     </div>
                 </article>
@@ -64,9 +76,15 @@
         </section>
 
         <footer>
-            <p>Our address is <address>65 New Street, 91234Long Bean</address></p>
+            <p>Our address is
+            <address>65 New Street, 91234Long Bean</address>
+            </p>
             <p class="textcontent">All site contents is copyright<a class="mainlink"></a></p>
-            <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+            <p class="smalltext">This page was generated on
+                <time>09:25:04.123</time>
+                .
+            </p>
         </footer>
+        <script src="scripts/myScript.js"></script>
     </body>
 </html>
