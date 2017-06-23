@@ -15,8 +15,8 @@ header {
 }
 
 .headerlogo > img {
-    height: 300px;
-    width: 300px;
+    height: 60px;
+    width: 60px;
 }
 
 #mainHeader {
@@ -38,7 +38,67 @@ header {
     font-weight: bold;
 }
 
-#welcometext {
+.backgroundgradient{
+    background: -webkit-linear-gradient(left, #603813, #341c05);
+    background: -o-linear-gradient(right, #603813, #341c05);
+    background: -moz-linear-gradient(right, #603813, #341c05);
+    background: linear-gradient(toright, #603813, #341c05);
+}
+
+.navlink{
+    height: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    float: left;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.navlink.active{
+
+}
+
+.addtocartbutton{
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;
+}
+
+.addtocartbutton:hover, .addtocartbutton:focus{
+    background-color: #512c0a;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url('../fonts/Lobster_1.3.otf');
+}
+#headername{
+    font-family: headerfont;
+    font-size: 40px;
+    color: #603813;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #5f2c17;
+}
+
+#welcomeimage {
     float: left;
     width: 700px;
 }
@@ -98,8 +158,8 @@ header {
 }
 
 #bestsellers > section > article > figure > img {
-    height: 300px;
-    width: 300px;
+    height: 60px;
+    width: 60px;
 }
 
 .productarticlemoreinfo {
@@ -114,6 +174,7 @@ footer {
     background-color: #5c5045;
     margin: 20px 0px 20px;
     padding: 5px;
+    transform: rotate(10deg);
 }
 
 .smallest{
@@ -126,3 +187,5 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
